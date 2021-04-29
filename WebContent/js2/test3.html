@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+	<script type="text/javascript">
+
+
+		//날짜 (Date) 객체 - 내장객체
+		
+		//객체 생성
+		// new Date();
+		var t = new Date();  //현재 시스템의 시간정보 + 날짜 정보
+		
+		
+		document.write(t + "<br>");
+		
+		
+		//document.write(t.getYear() + "년 ");
+		document.write(t.getFullYear()+ "년 ");
+		
+		//document.write(t.getMonth() + "월 ");   // 월 0~11
+		document.write((t.getMonth()+1)+ "월 ");
+		
+		//document.write(t.getDay() + "일 "); //요일(일:0~토:6)
+		document.write(t.getDate() + "일 ");
+
+		
+		
+		// 시간정보 출력
+		
+		document.write(t.getHours() + "시 ");
+		document.write(t.getMinutes() + "분 ");
+		document.write(t.getSeconds() + "초 ");
+		
+		document.write("<hr>");
+		
+		var d1 = new Date(2021,3,11); // 년,월-1,일
+		document.write(d1+"<hr>");
+		
+		var d2 = new Date("2021/3/11"); // 년, 월, 일
+		document.write(d2+"<hr>");
+		
+		var d3 = new Date(2021,2,11,11,00,00); // 년,월-1,일,시,분,초
+		document.write(d3+"<hr>");
+		
+		
+		// 2002년 월드컵 -> 개막일의 요일(2002/5/31)
+		var d4 = new Date(2002,4,31);
+
+		// document.write((d3.getDay()==5? "금":"") + "요일<br>");
+		
+		// 요일을 계산하는 함수 생성
+		function myDay(day) {
+			
+			var result = "";
+			
+			switch (day) {
+			case 0: result = "일"; break;
+			case 1: result = "월"; break;
+			case 2: result = "화"; break;
+			case 3: result = "수"; break;
+			case 4: result = "목"; break;
+			case 5: result = "금"; break;
+			case 6: result = "토"; break;
+			default: alert("오류입니다");
+				break;
+			}
+			
+			return result;
+		}
+		
+		document.write("개막일은 " + myDay(d4.getDay())+ "요일입니다<hr>");
+
+
+		
+		
+		
+		
+		
+		//2021/3/11(목) 11:38:00초 (현재시간정보 사용)
+		
+		
+		
+		
+		function nowTime() {
+			var tmp  = new Date();
+			
+			document.write(tmp.getFullYear()+"/");
+			document.write((tmp.getMonth()+1)+"/");	
+			document.write(tmp.getDate()+"(" + myDay(tmp.getDay())+ ") ");
+			document.write(" " + tmp.getHours()+ ":" + tmp.getMinutes() + ":" + tmp.getSeconds() +"초<br>")
+			
+		}
+		
+		
+		nowTime();
+		
+		nowTime();
+		
+		document.write("<hr>");
+		
+		
+		//D-day
+		//남은일수 = 특정날짜 객체 - 현재날짜 객체
+		
+		var today = new Date();
+		var d_day = new Date("2021/12/31");
+		
+		
+		document.write(d_day - today);  //밀리세컨드
+		
+		//1초 1000(msc)
+		//1분 = 1000 * 60
+		//1시간(60분) = 1000 * 60 * 60
+		//1일(24시간) = 1000 * 60 * 60 * 24
+		
+		
+		
+		//D-day 계산하는 함수 생성
+		
+		function dday(t,d) {
+			
+			var result = Math.ceil((d-t) / (1000*60*60*24));
+			
+			document.write("D-" + result + "일" );
+			
+		}
+		document.write("<hr>");
+		dday(today,d_day);
+		document.write("<hr>");
+		
+		
+		
+		
+		//상수
+		document.write(Math.PI+"<hr>");
+		document.write(Math.max(10,20)+"<hr>");
+		document.write(Math.abs(-100)+"<hr>");
+		document.write(Math.random()+"<hr>");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</script>
+
+
+</head>
+<body>
+	<h1>WebContent/js2/test3.html</h1>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

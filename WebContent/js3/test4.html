@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	
+	<script type="text/javascript">
+		// BOM-window.location 객체 : 브라우저의 주소줄
+		
+		// location 객체의 속성을 출력하는 함수 fun1()
+		// href, protocol, hostname, port, host
+	
+		
+		function fun1() {
+			document.write("href : " + window.location.href + "<br>");
+			document.write("protocol : " + window.location.protocol + "<br>");
+			document.write("hostname : " + window.location.hostname + "<br>");
+			document.write("port : " + window.location.port + "<br>");
+			document.write("host : " + window.location.host + "<br>");
+			
+		}
+	
+		fun1();
+		
+		
+		
+		
+		function fun2() {
+
+			// 특정 페이지 이동 -> 페이지의 주소가 변경 -> location.href 값이 변경
+			location.href="test1.html";
+			
+			
+			
+		}
+		//
+		//location.reload();
+		
+		// location.replace("test1.html");
+		
+		
+		
+		
+		
+		function fun3() {
+			
+			document.write("width : " + window.screen.width + "<br>");
+			document.write("height : " + window.screen.height + "<br>");
+			document.write("availWidth : " + window.screen.availWidth + "<br>");
+			document.write("availHeight : " + window.screen.availHeight + "<br>");
+		}
+		
+		
+		
+		function fun4() {
+			document.write("appCodeName : " + window.navigator.appCodeName +"<br>");
+			document.write("appName : " + window.navigator.appName +"<br>");
+			document.write("appVersion : " + window.navigator.appVersion +"<br>");
+			document.write("platform : " + window.navigator.platform +"<br>");
+			
+			document.write("userAgent : " + navigator.userAgent + "<br>");
+		}
+		
+		
+		
+		
+		
+		
+		
+	
+	</script>
+
+
+</head>
+<body>
+
+	<h1>WebContent/js3/test4.html</h1>
+	
+	
+	<h3> 버튼 클릭 시 test1.html 페이지로 이동</h3>
+	
+	<input type="button" value="test1.html 페이지 이동" onclick="fun2()">
+	
+	<h3> 버튼 클릭시 모니터 정보 확인</h3>
+	<input type="button" value="모니터 정보 확인" onclick="fun3()">
+	
+	
+	<input type="button" value="사용자 정보 확인" onclick="fun4()">
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

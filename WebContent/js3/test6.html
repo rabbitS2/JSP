@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<script type="text/javascript">
+	
+	
+		// 이미지 -> document에서 이미지의 정보를 배열로 저장
+	
+	
+		// alert(window.document.images[0].src);
+		// alert(window.document.img1.src);
+	
+		function func1() {
+			// alert(window.document.images[0].src);
+			alert("src : " + window.document.img1.src);
+			alert("name : " + document.images[0].name);
+			alert("border : " + document.img1.border);
+			alert("width : " + document.images[0].width);
+			alert("height" + document.img1.height);
+		}
+	
+	
+		
+		
+		function func2() {
+			
+			document.img2.src="2.jpg";
+			document.img2.width="200";
+			document.img2.height="200";
+			document.img2.border="3";
+			
+		}
+	
+	
+		
+		function func3(mouse) {
+			
+			if(mouse == "over"){
+				document.img3.src="101.jpg";
+			}else{
+				document.img3.src="3.jpg";
+			}
+			
+		}
+	
+	
+	</script>
+
+
+
+
+</head>
+<body>
+	<h1>WebContent/js3/test6.html</h1>
+		
+	<img src="101.jpg" width="500" height="250" name="img1">
+	<input type="button" value="이미지 정보확인" onclick="func1()">
+	<hr>
+
+	<h3>이미지 객체의 속성을 변경</h3>
+	<img src="1.jpg" width="150" height="150" name="img2">
+	<input type="button" value="이미지 변경" onclick="func2()">
+	
+	<img src="3.jpg" width="150" height="150" name="img3" onmouseover="func3('over')" onmouseout="func3('out')">
+
+	
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

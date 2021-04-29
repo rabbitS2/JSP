@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<script type="text/javascript">
+	
+	
+	
+		// 무한 루프
+		// ===> 찾고자 하는 답을 계속해서 찾아야할 때 사용
+		
+		
+		
+	/* 
+		for(;;){
+		
+			document.write("무한 루프!");
+		
+		}
+	
+		
+		
+		
+		
+		for(;true;){
+			
+			document.write("무한 루프!");
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		while(true){
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		do{
+			
+			
+		}while(true);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		보조 제어문 : 무한루프를 중재해주는 것
+		           break문 , continue 문  
+	
+ */
+ 		
+ 
+ 		for(var i = 1; i <= 10; i++){
+ 			
+ 			document.write(i + " ");
+ 			
+ 		//	break;        // break문 : 가장 가까운 반복문 하나를 탈출
+ 		
+ 			if(i==2){
+ 				break;
+ 			}
+ 		
+ 		}
+		
+		
+		document.write("<hr>");
+		
+		
+		
+		
+		
+ 		
+		 // continue 문 : 반복문에서만 사용가능
+		 
+ 		for(var i = 1; i <= 10; i++){
+ 			
+ 			if(i==2){
+ 				continue;
+ 			}
+ 			
+ 			document.write(i + " ")
+ 		
+ 		
+ 		}
+ 		document.write("<hr>");
+		
+		
+		
+		
+		
+		
+		
+ 		
+ 		
+ 		
+		
+		
+		// 중첩 for문 (이중 for문)
+		
+		for(var i = 1; i <= 5; i++){
+			
+			for(var j=1; j<=5; j++){
+				
+				document.write("i = " + i + ", j=" + j + "<br>");
+			}
+			document.write("<hr>");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// 구구단 출력
+		
+		for(var i = 2; i < 10; i++){
+			document.write("<hr>");
+			document.write("[" + i + "단] <br> ");
+			for(var j = 1; j < 10; j++){
+				document.write(i + " * " + j + " = " + (i*j) + "<br>");
+			}
+			
+		}
+		
+		document.write("<hr>");
+		
+		
+		
+		
+		
+		
+		
+		// 별 그리기
+		
+	 
+		
+		for(var i = 0; i < 5; i++){
+			
+			document.write("* <br>");
+			
+		}
+		
+		
+		document.write("<hr>");
+		
+		
+		
+		
+		for(var i = 0; i < 5; i++){
+			for(var j = 0; j < 5; j++){
+				
+				document.write("*");
+			}
+			
+			document.write("<br>");
+		}
+		
+		document.write("<hr>");
+		
+		
+		
+		for(var i = 0; i < 5; i++){
+			for(var j = 0; j < i; j++){
+				
+				document.write("*");
+			}
+			document.write("* <br> ");
+		}
+		
+		document.write("<hr>");
+		
+		
+		
+		
+		
+		for(var i = 5; i > 0; i--){
+			for(var j = 0; j < i; j++){
+				document.write("*");
+			}
+			document.write("<br>");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		var table = "<table border ='1'>";
+		
+		var num = 1;
+		
+		for(var row = 0; row < 5; row++){
+			table += "<tr>";
+			for(var colum = 0; colum < 3; colum++){
+				table +="<td>" + num + "</td>";
+				num++;
+			}
+			table += "</tr>";
+			
+		}
+		
+		document.write( table + " <br>");
+		
+		
+		
+		table += "</table>";
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	</script>
+
+
+
+
+
+
+</head>
+<body>
+
+	<h1>WebContent/js1/test8.html</h1>
+
+</body>
+</html>

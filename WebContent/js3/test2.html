@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<script type="text/javascript">
+	
+	/* 
+		function test(){
+			
+		}
+	
+		test(); --> 객체.test();
+		
+		
+	 */
+	
+		// window.alert("안녕하세요")
+		
+		
+		// open() : 새 브라우저를 띄울 때 사용
+		
+		/* window.open("url경로", "창이름", "옵션"); */
+	
+		// window.open("http://www.itwillbs.co.kr", "팝업테스트");
+		
+		
+		
+		//window.open("test1.html", "팝업테스트", "width=500,height=500");
+		
+		
+		
+		
+		function myOpen() {
+			window.open("test1.html", "팝업테스트", "width=500,height=500,left=400,top=400");
+		}
+		
+		
+		
+		//window.close();
+		
+		function myOpen2(){
+			window.open("test2_pop.html", "팝업테스트","width=500,height=500");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+	<h1>WebContent/js3/test2.html</h1>
+	
+	<!--  버튼 클릭시 test1.html 새창으로 열기  -->
+	<input type="button" value="창열기" onclick="open('test1.html', '팝업테스트', 'width=500,height=500')">
+
+
+
+	<input type="button" value="창열기(JS)" onclick="myOpen()">
+
+	<input type="button" value="창닫기" onclick="window.close()">
+	
+	<hr>
+	<!--  myOpen()2 호출로 새창 열기, test2_pop.html 생성후 (팝업-500x500)
+	      + 새창만 닫는 버튼을 추가 -->
+	<input type="button" value="창열기(JS)" onclick="myOpen2()" >
+	
+	
+	
+	<form action="" name="fr">
+		<input type="test" name="txt" value="">
+	</form>
+	
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

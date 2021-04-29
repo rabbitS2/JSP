@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+	<script type="text/javascript">
+	
+		// 중첩 if문
+		
+		// 로그인 로직
+		// 아이디 - O -> 비밀번호 비교 ->  O  -> 로그인 성공
+		//						 ->  X  -> 비번 오류
+		
+		//	    - X -> 비회원  -> 회원가입로직 
+		
+		
+		var userID = "itwill001";
+		var userPW = "qwe123"
+		
+		
+		var inputID = prompt("아이디를 입력하세요 ");
+		var inputPW = prompt("비밀번호를 입력하세요 ");
+		
+		
+		if(inputID == userID){
+			
+			if(inputPW == userPW){
+				alert( inputID + "님 환영합니다" );
+				
+			}else{
+				alert("비밀번호 오류"); 
+				location.reload();        // 페이지 새로고침이랑 같은 의미
+			}
+			
+		}else{
+			   // alert("비회원 입니다. 회원가입해주세요");
+			    confirm("비회원 입니다. 회원가입해주세요");
+			    location.reload();
+		}
+		
+		
+		
+		
+		// 선택문 ( switch-case 문 )
+		
+		var num = 10.11;
+		
+		
+		switch(num){
+		
+		case 10: 
+			alert("가능");
+			break;
+
+		case 9.11: 
+			alert("가능");
+			break;
+			
+		case "Hello":
+			alert("가능");
+			break;
+			
+		case 7:
+			alert("D학점입니다");
+			break;
+			
+		case 6:
+			alert("F학점입니다");
+			break;
+			
+		default :
+			alert("해당사항 없음");
+			break;
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		var score;
+		
+		score = prompt("성적을 입력하세요");
+		
+		var tmp = Math.floor(score/10);
+		var grade;
+		 
+		
+	    switch(tmp){
+		
+	    case 10:
+		case 9: 
+			//alert("A학점입니다");
+			grade = "A";
+			break;
+
+		case 8:
+			//alert("B학점입니다");
+			grade = "B";
+			break;
+			
+		case 7:
+			//alert("C학점입니다");
+			grade = "C";
+			break;
+			
+		case 6:
+			//alert("D학점입니다");
+			grade = "D";
+			break;
+			
+		case 5:
+			//alert("F학점입니다");
+			grade = "F";
+			break;
+			
+		default :
+			//alert("해당사항 없음");
+			break;
+			
+		}
+	    
+	    alert(grade);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	</script>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<h1>Webcontent/js1/test6.html</h1>
+	
+
+</body>
+</html>

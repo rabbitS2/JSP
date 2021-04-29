@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+	<script type="text/javascript">
+	
+	
+		function myClose(){
+			
+			// test2_pop  --->  test2 전달
+			
+			// document.fr.txt.value="testMSG";
+			// opener.document.fr.txt.value="test_MSG";
+			
+			opener.document.fr.txt.value=document.ofr.txt.value;
+			
+			window.close();
+		}
+	
+	
+	
+	
+	</script>
+
+
+
+</head>
+<body>
+	
+	<input type="button" value="창 닫기" onclick="myClose();">
+	<hr>
+	<form action="" name="ofr">
+		<input type="test" name="txt" value="">
+	</form>
+	
+	
+</body>
+</html>
