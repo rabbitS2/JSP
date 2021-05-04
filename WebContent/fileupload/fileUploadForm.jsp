@@ -23,9 +23,10 @@
 	    </tr>
 	    <tr>
 	       <td colspan="2">
-	       	<input type="submit" value="파일업로드">
+	         <input type="submit" value="파일업로드">
 	       </td>
-	    </tr>
+	    </tr>  
+	    
 	  </table>
   </form>
   
